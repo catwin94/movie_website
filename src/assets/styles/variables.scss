@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+
+//Main Colors
+$primaryText: #212529;
+$secondaryText: #343a40;
+$tertiaryText: #495057;
+$gray: #e2e2e2;
+$white: #ffffff;
+
+$primaryColor: #7b2cbf;
+$primaryColorLight: #9d4edd;
+$secondaryColor: #ff9100;
+
+//Gradients
+// $gradient_inclinate: linear-gradient(
+//   209.81deg,
+//   $secondaryColor 8.1%,
+//   $primaryColor 81.79%
+// );
+// $gradient_vo: linear-gradient(
+//   180deg,
+//   $primaryColor 34.69%,
+//   $secondaryColor0 100%
+// );
+// $gradient_ov: linear-gradient(
+//   180deg,
+//   $secondaryColor0 0%,
+//   $primaryColor 60.94%
+// );
+
+//Theme Font
+$themeFont: "Dongle", sans-serif;
+
+//Font sizes
+$fontSize: (
+  "xx-small": 9px,
+  "x-small": 10px,
+  "small": 13px,
+  "medium": 16px,
+  "large": 18px,
+  "x-large": 24px,
+  "xx-large": 32px,
+);
