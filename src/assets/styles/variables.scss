@@ -33,11 +33,14 @@ $themeFont: "Dongle", sans-serif;
 
 //Font sizes
 $fontSize: (
-  "xx-small": 9px,
-  "x-small": 10px,
+  "xxsmall": 9px,
+  "xsmall": 10px,
   "small": 13px,
   "medium": 16px,
   "large": 18px,
-  "x-large": 24px,
-  "xx-large": 32px,
+  "xlarge": 24px,
+  "xxlarge": 32px,
 );
+@function fontSize($name) {
+  @return map-get($fontSize, $name);
+}
