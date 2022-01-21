@@ -10,7 +10,15 @@ html {
   font-size: 62.5%;
 }
 
+//note: This root configuration allows to position the footer
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 body {
   font-family: $themeFont;
   background: $white;
+  height: 100%;
 }

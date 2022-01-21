@@ -16,7 +16,7 @@ export default function Header() {
       </div>
 
       <nav className="link">
-        <a href="/"> Directory</a>
+        <a href="#"> Directory</a>
       </nav>
 
       <div className="headerSearchBar">

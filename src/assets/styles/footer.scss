@@ -1,0 +1,37 @@
+@import "./variables.scss";
+
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 6rem;
+  background: $primaryColor;
+
+  & a {
+    cursor: pointer;
+    color: $white;
+    text-decoration: none;
+    font-size: fontSize("xlarge");
+    margin: 0 17rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+//Tablet and Mobile
+@media only screen and (max-width: 992px) {
+  .footerContainer {
+    justify-content: space-around;
+    & a {
+      font-size: fontSize("large");
+      margin: 0;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

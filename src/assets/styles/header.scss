@@ -29,10 +29,14 @@
 .link {
   justify-self: flex-end;
   margin-right: 3rem;
+  transition: all ease 0.3s;
   & a {
     color: $white;
     text-decoration: none;
     font-size: fontSize("xxlarge");
+  }
+  &:hover {
+    transform: scale(1.1);
   }
 }
 
