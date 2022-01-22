@@ -1,20 +1,23 @@
 import React from "react";
 import "../assets/styles/cardContainer.scss";
 
-export default function CardItem() {
+interface cardItemProps {
+  title: string;
+  description: string;
+  year: string;
+  imgLink: string;
+}
+
+export default function CardItem(props: cardItemProps) {
+  const { title, description, year, imgLink } = props;
+
   return (
     <div className="cardItem">
-      <img
-        className="cardImg"
-        src="https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-        alt=""
-      />
+      <img className="cardImg" src={imgLink} alt="" />
       <div className="cardDetails">
-        <p className="cardTitle">Title</p>
-        <p className="cardDescription">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel
-          pariatur ut animi impedit in nihil commodi aut facere
-        </p>
+        <p className="cardTitle">{title}</p>
+        <p>{year}</p>
+        <p className="cardDescription">{description}</p>
       </div>
     </div>
   );

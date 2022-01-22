@@ -2,18 +2,35 @@ import React from "react";
 import CardItem from "./CardItem";
 import "../assets/styles/cardContainer.scss";
 
-export default function CardContainer() {
+interface MovieList {
+  movieList: movie[];
+}
+
+interface movie {
+  Title: string;
+  Year: string;
+  imdbID: string;
+  Type: string;
+  Poster: string;
+}
+
+export default function CardContainer(props: MovieList) {
+  const { movieList } = props;
+
+  // movieList.forEach((item) => {
+  //   console.log(item.Title);
+  // });
+
   return (
     <div className="cardContainer">
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
+      {movieList.map((item) => (
+        <CardItem
+          title={item.Title}
+          description="HOLA"
+          year="1994"
+          imgLink={item.Poster}
+        />
+      ))}
     </div>
   );
 }
