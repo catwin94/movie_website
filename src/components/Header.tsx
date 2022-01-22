@@ -20,7 +20,7 @@ export default function Header() {
       </nav>
 
       <div className="headerSearchBar">
-        <input type="search" placeholder="Search..." />
+        <input className="searchInput" type="search" placeholder="Search..." />
         <img src={searchIconWhite} alt="search icon" />
       </div>
     </div>

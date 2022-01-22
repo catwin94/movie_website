@@ -1,3 +1,36 @@
+@import "./variables.scss";
+
 section {
   flex: 1;
+}
+
+// Search Bar container / styles
+.searchBarContainer {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 2rem 2rem;
+
+  & div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $gray;
+    border: solid 2px $secondaryColor;
+    color: $primaryText;
+    border-radius: 4rem;
+    padding: 0.8rem 2rem;
+    width: 60vw;
+  }
+
+  & input {
+    color: $primaryText;
+  }
+
+  & img {
+    height: 2.8rem;
+  }
+}
+
+// Section Title
+.sectionTitle {
 }
