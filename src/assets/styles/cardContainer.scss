@@ -1,0 +1,41 @@
+@import "./variables.scss";
+
+//Card Container
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 1rem;
+  margin: 4rem 3rem 3rem;
+}
+
+// Card Item
+.cardItem {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  height: 30rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.cardImg {
+  width: 24rem;
+  height: 20rem;
+}
+
+.cardDetails {
+  height: 100%;
+  font-size: fontSize("xxlarge");
+  padding: 0.4rem 1rem;
+
+  & .cardTitle {
+    line-height: 3rem;
+    color: $primaryColor;
+  }
+
+  & .cardDescription {
+    font-size: fontSize("large");
+    line-height: 1.3rem;
+  }
+}
