@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/styles/searchBar.scss";
-import { SearchBarProps } from "./interfaces";
+import { SearchBarProps } from "../interfaces/interfaces";
 
 export default function SearchBar(props: SearchBarProps) {
   const { title, setTitle, setMovie } = props;

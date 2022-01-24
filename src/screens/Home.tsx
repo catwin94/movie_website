@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Footer from "./Footer";
-import Header from "./Header";
-import CardContainer from "./CardContainer";
-import SearchBar from "./SearchBar";
-import { Movie } from "./interfaces";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import CardContainer from "../components/CardContainer";
+import SearchBar from "../components/SearchBar";
+import { Movie } from "../interfaces/interfaces";
 import "../assets/styles/home.scss";
 import "../assets/styles/header.scss";
 

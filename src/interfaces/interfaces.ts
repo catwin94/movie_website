@@ -15,6 +15,7 @@ export interface MovieListProps {
 export interface CardItemProps {
   title: string;
   description: string;
+  imdbID: string;
   year: string;
   imgLink: string;
 }
