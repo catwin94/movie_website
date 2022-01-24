@@ -6,14 +6,16 @@ export default function SearchBar(props: SearchBarProps) {
   const { title, setTitle, setMovie } = props;
 
   /* handleEnterKeyPressed: this function detects when a search event is required by the enter key*/
-  const handleEnterKeyPressed = (event: any) => {
+  const handleEnterKeyPressed = (
+    event: React.KeyboardEvent<HTMLInputElement>
+  ): void => {
     if (event.key === "Enter") {
       searchMovie(title);
     }
   };
 
   /* handleSearchInput: This function handle the changes in the search input*/
-  function handleSearchInput(event: any) {
+  function handleSearchInput(event: React.ChangeEvent<HTMLInputElement>): void {
     setTitle(event.target.value);
   }
 

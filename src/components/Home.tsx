@@ -2,16 +2,17 @@ import React, { useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import CardContainer from "./CardContainer";
+import SearchBar from "./SearchBar";
+import { Movie } from "./interfaces";
 import "../assets/styles/home.scss";
 import "../assets/styles/header.scss";
-import SearchBar from "./SearchBar";
 
 export default function Home() {
   // Handle input
-  const [title, setTitle] = useState("");
+  const [title, setTitle] = useState<string>("");
 
   //Handle result from API search
-  const [movie, setMovie] = useState([]);
+  const [movie, setMovie] = useState<Movie[] | []>([]);
 
   return (
     <React.Fragment>

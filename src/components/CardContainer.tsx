@@ -1,9 +1,9 @@
 import React from "react";
 import CardItem from "./CardItem";
-import { MovieList } from "./interfaces";
+import { MovieListProps } from "./interfaces";
 import "../assets/styles/cardContainer.scss";
 
-export default function CardContainer(props: MovieList) {
+export default function CardContainer(props: MovieListProps) {
   const { movieList } = props;
 
   return (

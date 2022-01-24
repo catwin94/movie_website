@@ -8,8 +8,8 @@ export interface Movie {
   Poster: string;
 }
 
-export interface MovieList {
-  movieList: Movie[];
+export interface MovieListProps {
+  movieList: Movie[] | [];
 }
 
 export interface CardItemProps {
@@ -25,5 +25,5 @@ export interface TitleProps {
 }
 
 export interface SearchBarProps extends TitleProps {
-  setMovie: Dispatch<SetStateAction<any>>;
+  setMovie: Dispatch<SetStateAction<Array<Movie>>>;
 }
