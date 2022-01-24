@@ -8,13 +8,14 @@ export default function CardContainer(props: MovieListProps) {
 
   return (
     <div className="cardContainer">
-      {movieList.map((item) => (
+      {movieList.map((item, key) => (
         <CardItem
           title={item.Title}
           description={item.Type}
           imdbID={item.imdbID}
           year={item.Year}
           imgLink={item.Poster}
+          key={key}
         />
       ))}
     </div>

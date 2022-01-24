@@ -1,6 +1,5 @@
 import React from "react";
 import cameraIcon from "../assets/icons/camera_icon.png";
-import searchIconWhite from "../assets/icons/search_icon_white.png";
 import "../assets/styles/header.scss";
 // import Link from "react-router-dom";
 

@@ -24,7 +24,3 @@ export interface TitleProps {
   title: string;
   setTitle: Dispatch<SetStateAction<string>>;
 }
-
-export interface SearchBarProps extends TitleProps {
-  setMovie: Dispatch<SetStateAction<Array<Movie>>>;
-}

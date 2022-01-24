@@ -8,11 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
-
-        <Route path="/" element={<Home />}>
-          {/* <Link to=`/movies/${variable}` ></Link> */}
-        </Route>
+        <Route path="/" element={<Home />} />
         <Route path="/movies/:imdbID" element={<MovieDetails />} />
       </Routes>
     </BrowserRouter>

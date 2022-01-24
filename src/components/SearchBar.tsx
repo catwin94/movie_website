@@ -1,9 +1,12 @@
 import React from "react";
 import "../assets/styles/searchBar.scss";
-import { SearchBarProps } from "../interfaces/interfaces";
+import { TitleProps } from "../interfaces/interfaces";
+import { setMovies } from "../redux/slices/movies.slice";
+import { useAppDispatch } from "../redux/store/store";
 
-export default function SearchBar(props: SearchBarProps) {
-  const { title, setTitle, setMovie } = props;
+export default function SearchBar(props: TitleProps) {
+  const { title, setTitle } = props;
+  const dispatch = useAppDispatch();
 
   /* handleEnterKeyPressed: this function detects when a search event is required by the enter key*/
   const handleEnterKeyPressed = (
@@ -25,7 +28,7 @@ export default function SearchBar(props: SearchBarProps) {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        setMovie(data.Search);
+        dispatch(setMovies(data.Search));
       });
   }
 
