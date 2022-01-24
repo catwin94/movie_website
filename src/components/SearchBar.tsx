@@ -1,5 +1,5 @@
 import React from "react";
-import searchIconOrange from "../assets/icons/search_icon_orange.png";
+import "../assets/styles/searchBar.scss";
 import { SearchBarProps } from "./interfaces";
 
 export default function SearchBar(props: SearchBarProps) {
@@ -39,11 +39,7 @@ export default function SearchBar(props: SearchBarProps) {
         onKeyPress={handleEnterKeyPressed}
         value={title}
       />
-      <img
-        src={searchIconOrange}
-        alt="search icon"
-        onClick={() => searchMovie(title)}
-      />
+      <i className="bx bx-search-alt" onClick={() => searchMovie(title)} />
     </div>
   );
 }

@@ -1,10 +1,12 @@
 @import "./variables.scss";
 
+$cardWidth: 20rem;
+
 //Card Container
 .cardContainer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-  gap: 1rem;
+  gap: 2rem;
   margin: 6rem 3rem 6rem;
 }
 
@@ -13,25 +15,50 @@
   justify-self: center;
   display: flex;
   flex-direction: column;
-  width: 22rem;
-  height: 30rem;
-  border-radius: 1rem;
-  overflow: hidden;
+  position: relative;
+  width: $cardWidth;
+  height: calc($cardWidth * 3 / 2);
+  margin-bottom: 2rem;
+  transition: all ease 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .cardImg {
-  width: 22rem;
-  height: 20rem;
+  width: $cardWidth;
+  min-height: calc($cardWidth * 3 / 2);
+  border-radius: 1rem;
 }
 
 .cardDetails {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
   height: 100%;
-  font-size: fontSize("xxlarge");
-  padding: 0.4rem 1rem;
+  width: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(22, 27, 47, 1) 0%,
+    rgba(22, 27, 47, 1) 30%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  color: $primaryText;
+  font-size: fontSize("xlarge");
+  padding: 0.4rem 1rem 2rem;
+  transition: all ease 0.3s;
+  &:hover {
+    opacity: 1;
+  }
 
   & .cardTitle {
     line-height: 3rem;
     color: $primaryColor;
+    line-height: 1.8rem;
   }
 
   & .cardDescription {

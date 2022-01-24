@@ -1,37 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
 
 //Main Colors
-$primaryText: #212529;
-$secondaryText: #343a40;
-$tertiaryText: #495057;
-$gray: #e2e2e2;
+$primaryText: #ffffff;
+$secondaryText: #495057;
+$tertiaryText: #343a40;
+
+$gray: #212529;
 $white: #ffffff;
 
-$primaryColor: #7b2cbf;
-$primaryColorLight: #9d4edd;
-$secondaryColor: #ff9100;
-$backgroundColor: #ffffff;
-
-// $primaryColor: #161b2f;
-// $primaryColorLight: #fc0b4f8c;
-// $secondaryColor: #fc0b4f;
-
-//Gradients
-// $gradient_inclinate: linear-gradient(
-//   209.81deg,
-//   $secondaryColor 8.1%,
-//   $primaryColor 81.79%
-// );
-// $gradient_vo: linear-gradient(
-//   180deg,
-//   $primaryColor 34.69%,
-//   $secondaryColor0 100%
-// );
-// $gradient_ov: linear-gradient(
-//   180deg,
-//   $secondaryColor0 0%,
-//   $primaryColor 60.94%
-// );
+$primaryColor: #fc0b4f;
+$primaryColorLight: #ff6691;
+$secondaryColor: #fc0b4f;
+$backgroundColor: #161b2f;
 
 //Theme Font
 $themeFont: "Dongle", sans-serif;
