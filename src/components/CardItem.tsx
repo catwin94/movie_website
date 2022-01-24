@@ -1,14 +1,8 @@
 import React from "react";
 import "../assets/styles/cardContainer.scss";
+import { CardItemProps } from "./interfaces";
 
-interface cardItemProps {
-  title: string;
-  description: string;
-  year: string;
-  imgLink: string;
-}
-
-export default function CardItem(props: cardItemProps) {
+export default function CardItem(props: CardItemProps) {
   const { title, description, year, imgLink } = props;
 
   return (
