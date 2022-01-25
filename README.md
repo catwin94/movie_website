@@ -2,8 +2,6 @@
 
 #### Movie fun is a website application where you can find information about the movie, episode or series that you want
 
-Link to the website [here](https://catwin94.github.io/movie_website/)
-
 ## Installation
 
 #### Run the following commands in your terminal
