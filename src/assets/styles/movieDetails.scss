@@ -1,0 +1,23 @@
+@import "./Variables.scss";
+
+$cardWidth: 30rem;
+
+.movieDetailsContainer {
+  border: solid 2px red;
+  padding: 5rem;
+  display: flex;
+  flex-direction: row;
+
+  & .movieImg {
+    border-radius: 2rem;
+    width: $cardWidth;
+    min-height: calc($cardWidth * 3 / 2);
+    margin-right: 2rem;
+  }
+
+  & .movieDetailsInfo {
+    margin-top: 2rem;
+    color: $primaryText;
+    font-size: fontSize("xlarge");
+  }
+}
