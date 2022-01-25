@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import "../assets/styles/movieDetails.scss";
-import { MovieDetails } from "../interfaces/interfaces";
+import { MovieDetailsTypes } from "../interfaces/interfaces";
 import { searchById } from "../redux/slices/movies.slice";
 
 export default function MovieDetails() {
   let urlParams = useParams();
 
-  const [movieDetails, setMovieDetails] = useState<MovieDetails | null>(null);
+  const [movieDetails, setMovieDetails] = useState<MovieDetailsTypes | null>(
+    null
+  );
   const [error, setError] = useState(false);
 
   useEffect(() => {

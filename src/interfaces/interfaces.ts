@@ -25,7 +25,7 @@ export interface TitleProps {
   setTitle: Dispatch<SetStateAction<string>>;
 }
 
-export interface MovieDetails {
+export interface MovieDetailsTypes {
   Title: string;
   Year: string;
   Rated: string;
