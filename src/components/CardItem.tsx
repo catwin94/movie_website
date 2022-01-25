@@ -9,7 +9,15 @@ export default function CardItem(props: CardItemProps) {
   return (
     <Link to={`/movies/${imdbID}`}>
       <div className="cardItem">
-        <img className="cardImg" src={imgLink} alt="" />
+        <img
+          className="cardImg"
+          src={
+            imgLink !== "N/A"
+              ? imgLink
+              : "https://images.pexels.com/photos/65128/pexels-photo-65128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          }
+          alt=""
+        />
         <div className="cardDetails">
           <p className="cardTitle">{title}</p>
 

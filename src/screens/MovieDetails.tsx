@@ -73,7 +73,11 @@ export default function MovieDetails() {
       <div className="movieDetailsContainer">
         <img
           className="movieImg"
-          src={movieDetails.Poster}
+          src={
+            movieDetails.Poster !== "N/A"
+              ? movieDetails.Poster
+              : "https://images.pexels.com/photos/65128/pexels-photo-65128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          }
           alt="movie poster"
         />
 
@@ -91,8 +95,8 @@ export default function MovieDetails() {
 
           <h3>Raitings:</h3>
           <div className="raiting">
-            {movieDetails.Ratings.map((item: RaitingItem) => (
-              <p>
+            {movieDetails.Ratings.map((item: RaitingItem, key) => (
+              <p key={key}>
                 {item.Source}: {item.Value}
               </p>
             ))}
