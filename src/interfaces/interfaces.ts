@@ -25,6 +25,10 @@ export interface TitleProps {
   setTitle: Dispatch<SetStateAction<string>>;
 }
 
+export interface RaitingItem {
+  Source: string;
+  Value: string;
+}
 export interface MovieDetailsTypes {
   Title: string;
   Year: string;
@@ -40,7 +44,7 @@ export interface MovieDetailsTypes {
   Country: string;
   Awards: string;
   Poster: string;
-  Ratings: string;
+  Ratings: RaitingItem[];
   Metascore: string;
   imdbRating: string;
   imdbVotes: string;
@@ -51,4 +55,8 @@ export interface MovieDetailsTypes {
   Production: string;
   Website: string;
   Response: string;
+}
+
+export interface LayoutProps {
+  children: React.ReactNode;
 }

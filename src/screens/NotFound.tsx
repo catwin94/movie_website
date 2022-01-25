@@ -4,9 +4,9 @@ import "../assets/styles/notFound.scss";
 
 export default function NotFound() {
   return (
-    <section className="container error">
-      <div className="error__container">
-        <p className="error__container--number">404</p>
+    <section className="errorContainer">
+      <div className="errorMessage">
+        <p className="errorMessage--number">404</p>
         <p>Ooops, This page Not Found! </p>
         <Link to="/">
           Return to <span>Home</span>

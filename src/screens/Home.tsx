@@ -17,7 +17,6 @@ export default function Home() {
 
   return (
     <React.Fragment>
-      <Header />
       <section className="homeContainer">
         <div className="searchBarContainer">
           <SearchBar />
@@ -53,7 +52,6 @@ export default function Home() {
           </div>
         )}
       </section>
-      <Footer />
     </React.Fragment>
   );
 }

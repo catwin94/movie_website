@@ -1,12 +1,14 @@
 @import "./Variables.scss";
 
-.error {
+.errorContainer {
   background: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100vw;
+  height: calc(100vh - 14rem);
 }
-.error__container {
+.errorMessage {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,7 +71,7 @@
   }
 }
 
-.error__container--number {
+.errorMessage--number {
   font-size: 7rem;
   color: $warningRed;
   font-weight: bold;
@@ -103,5 +105,11 @@
   100% {
     transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
     animation-timing-function: ease-in;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .errorContainer {
+    height: calc(100vh - 12rem);
   }
 }

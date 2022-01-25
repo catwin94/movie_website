@@ -2,24 +2,67 @@
 
 $cardWidth: 30rem;
 
+.movieDetailes {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  height: calc(100% - 14rem);
+}
+
 .movieDetailsContainer {
-  border: solid 2px red;
   padding: 5rem;
   display: flex;
   flex-direction: row;
+  width: 100vw;
 
   & .movieImg {
     border-radius: 2rem;
-    width: $cardWidth;
-    min-height: calc($cardWidth * 3 / 2);
+    max-width: $cardWidth;
+    max-height: calc($cardWidth * 3 / 2);
     margin-right: 2rem;
   }
 
   & .movieDetailsInfo {
-    margin-top: 2rem;
+    padding: 2rem 0 0 2rem;
     color: $primaryText;
     font-size: fontSize("xlarge");
+    border-left: solid 3px $secondaryColor;
+
+    & h2 {
+      //Title
+      color: $secondaryColor;
+    }
+
+    & .extraDetails p {
+      font-style: italic;
+      font-size: fontSize("xlarge");
+      line-height: 2rem;
+    }
+
+    & .plot {
+      margin: 2rem 0;
+      line-height: 2rem;
+    }
+
+    & h3 {
+      text-decoration: underline;
+    }
+    & .raiting p {
+      line-height: 2rem;
+    }
   }
+}
+
+.buttonBackHome {
+  font-size: fontSize("xlarge");
+  color: $primaryText;
+  background-color: $secondaryColor;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
 }
 
 .loading {
@@ -49,5 +92,39 @@ $cardWidth: 30rem;
   & h2 {
     padding: 0 5rem;
     text-align: center;
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 768px) {
+  .movieDetailes {
+    // height: calc(100vh - 12rem);
+    height: fit-content;
+    padding-bottom: 4rem;
+  }
+
+  .movieDetailsContainer {
+    padding: 2rem;
+
+    flex-direction: column;
+    align-items: center;
+
+    & .movieImg {
+      margin-right: 0;
+      box-shadow: 0px 0px 10px 0px $white;
+    }
+
+    & .movieDetailsInfo {
+      padding: 2rem 0 0 0;
+      color: $primaryText;
+      font-size: fontSize("xlarge");
+      border: none;
+
+      & h2 {
+        line-height: 2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+      }
+    }
   }
 }
