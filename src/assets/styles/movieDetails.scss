@@ -8,7 +8,7 @@ $cardWidth: 30rem;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 100vw;
+  width: 100%;
   height: calc(100% - 14rem);
 }
 
@@ -16,7 +16,7 @@ $cardWidth: 30rem;
   padding: 5rem;
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: 100%;
 
   & .movieImg {
     border-radius: 2rem;
