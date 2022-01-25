@@ -12,8 +12,10 @@ export default function CardItem(props: CardItemProps) {
         <img className="cardImg" src={imgLink} alt="" />
         <div className="cardDetails">
           <p className="cardTitle">{title}</p>
-          <p>{year}</p>
-          <p className="cardDescription">{description}</p>
+
+          <p className="cardDescription">
+            {year} - {description}
+          </p>
         </div>
       </div>
     </Link>

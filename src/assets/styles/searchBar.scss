@@ -35,3 +35,17 @@
     cursor: pointer;
   }
 }
+
+.searchInput {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 90%;
+  padding: 1px 0.5rem 0px 1rem;
+  font-family: $themeFont;
+  font-size: fontSize("xlarge");
+}
+
+::placeholder {
+  font-style: italic;
+}

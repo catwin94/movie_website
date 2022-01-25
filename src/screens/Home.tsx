@@ -20,10 +20,10 @@ export default function Home() {
         <div className="searchBarContainer">
           <SearchBar title={title} setTitle={setTitle} />
         </div>
-        <div className="sectionTitle">
+        {/* <div className="sectionTitle">
           <h2>Recomendations</h2>
           <span></span>
-        </div>
+        </div> */}
         <CardContainer movieList={movie} />
       </section>
       <Footer />

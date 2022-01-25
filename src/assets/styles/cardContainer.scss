@@ -11,18 +11,21 @@ $cardWidth: 20rem;
 }
 
 // Card Item
-.cardItem {
+a {
   justify-self: center;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: $cardWidth;
-  height: calc($cardWidth * 3 / 2);
-  margin-bottom: 2rem;
-  transition: all ease 0.3s;
 
-  &:hover {
-    transform: scale(1.1);
+  & .cardItem {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: $cardWidth;
+    height: calc($cardWidth * 3 / 2);
+    margin-bottom: 2rem;
+    transition: all ease 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
@@ -44,13 +47,13 @@ $cardWidth: 20rem;
   background: linear-gradient(
     0deg,
     rgba(22, 27, 47, 1) 0%,
-    rgba(22, 27, 47, 1) 30%,
-    rgba(0, 0, 0, 0) 100%
+    rgba(22, 27, 47, 0.8) 25%,
+    rgba(0, 0, 0, 0) 50%
   );
   color: $primaryText;
   font-size: fontSize("xlarge");
   padding: 0.4rem 1rem 2rem;
-  transition: all ease 0.3s;
+  transition: all ease 0.2s;
   &:hover {
     opacity: 1;
   }
@@ -64,5 +67,11 @@ $cardWidth: 20rem;
   & .cardDescription {
     font-size: fontSize("large");
     line-height: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cardDetails {
+    opacity: 1;
   }
 }

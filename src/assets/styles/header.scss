@@ -1,9 +1,9 @@
 @import "./variables.scss";
 
 .headerContainer {
-  display: grid;
+  display: flex;
+  justify-content: center;
   padding: 0 3rem;
-  grid-template-columns: 6rem 1fr 1fr 40rem;
   align-items: center;
   width: 100vw;
   height: 8rem;
@@ -16,6 +16,7 @@
   justify-self: center;
   & img {
     width: 3rem;
+    margin-right: 2rem;
   }
 }
 
@@ -25,83 +26,13 @@
   font-size: fontSize("medium");
 }
 
-//Directory Link
-.link {
-  justify-self: flex-end;
-  margin-right: 3rem;
-  transition: all ease 0.3s;
-  & a {
-    color: $white;
-    text-decoration: none;
-    font-size: fontSize("xxlarge");
-  }
-  &:hover {
-    transform: scale(1.1);
-  }
-}
-
-// Search Bar
-.headerSearchBar {
-  justify-self: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.2rem 1rem;
-  width: 100%;
-  height: 4rem;
-  background: $primaryColorLight;
-  border-radius: 4rem;
-
-  & input {
-    color: $white;
-  }
-
-  & i {
-    font-size: 2.5rem;
-    color: $primaryText;
-    cursor: pointer;
-  }
-
-  & img {
-    height: 2.8rem;
-    cursor: pointer;
-  }
-}
-
-.searchInput {
-  // display: none;
-  border: none;
-  outline: none;
-  background: transparent;
-  width: 90%;
-  padding: 1px 0.5rem 0px 1rem;
-  font-family: $themeFont;
-  font-size: fontSize("xlarge");
-}
-
-::placeholder {
-  font-style: italic;
-}
-
 //Tablet
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  .headerContainer {
-    grid-template-columns: 6rem 1fr 1fr auto;
-  }
-  // Search Bar
-  .headerSearchBar {
-    & input {
-      display: none;
-    }
-  }
 }
 
 //Mobile
 @media only screen and (max-width: 768px) {
   .headerContainer {
-    padding: 0 2rem;
-    grid-template-columns: auto 1fr auto;
     height: 6rem;
   }
   //Main Logo
@@ -113,17 +44,5 @@
   .logoTitle {
     justify-self: center;
     font-size: fontSize("large");
-  }
-
-  //Directory Link
-  .link {
-    display: none;
-  }
-
-  // Search Bar
-  .headerSearchBar {
-    & input {
-      display: none;
-    }
   }
 }

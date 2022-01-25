@@ -13,17 +13,6 @@ export default function Header() {
       <div className="logoTitle">
         <h1>Movie Fun</h1>
       </div>
-
-      <nav className="link">
-        <a href="#"> Directory</a>
-      </nav>
-
-      <div className="headerSearchBar">
-        <input className="searchInput" type="search" placeholder="Search..." />
-        {/* <img src={searchIconWhite} alt="search icon" />
-         */}
-        <i className="bx bx-search-alt" />
-      </div>
     </div>
   );
 }
